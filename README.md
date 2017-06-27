@@ -10,7 +10,8 @@ Design: Very clean modern design, make use of fadeIn() in JQ, and big background
 
 Points: 
 1. Include facebook link/embedding
-2.
+2. Include a gallery?
+3. 
 
 Current Website: http://ase.tufts.edu/ksa/index1.html
 
