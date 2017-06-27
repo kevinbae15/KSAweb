@@ -1,0 +1,507 @@
+* {
+	margin: 0px;
+	/* [disabled]padding: 0px; */
+	color: #000;
+}#wrapper {
+	background-color: #f7f7f7;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#wrapper #logo {
+	height: 84px;
+	background-color: #333333;
+}
+#wrapper #headerImg {
+	height: 250px;
+	background-image: url(../images/header%20img.jpg);
+	background-repeat: no-repeat;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #headerImg3 {
+	height: 250px;
+	background-image: url(../images/header3.jpg);
+	background-repeat: no-repeat;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+
+a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#wrapper #bodyArea #footer {
+	height: 40px;
+	clear: both;
+	background-color: #F7F7F7;
+}
+p {
+	margin: 15px;
+
+
+
+	font-family: "Arial";
+	font-size: 14px;
+}
+
+
+#wrapper #navigation {
+	height: 40px;
+	font-size: 18px;
+	font-family: curls;
+	font-weight: normal;
+	background-color: #D6D6D6;
+	border: 1px solid #666;
+	background-image: url(../images/navigationbar.jpg);
+}
+#wrapper #bodyArea #left {
+	width: 548px;
+	float: left;
+	height: 630px;
+	border: 1px solid #666;
+}
+a {
+	color: #CCC;
+	text-decoration: none;
+}
+
+#wrapper #bodyArea #right {
+	width: 250px;
+	float: right;
+	background-color: #e2e2e2;
+	height: 630px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #left p strong {
+	font-size: 16px;
+}
+#wrapper #bodyArea #footer div {
+	font-size: 10pt;
+}
+#wrapper #bodyArea #footer div p {
+	font-size: 10pt;
+}
+#wrapper #bodyArea #president {
+	float: left;
+	width: 50%;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #vice {
+	float: right;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #secretary {
+	float: left;
+	clear: left;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+
+#wrapper #bodyArea #treasurer {
+	float: right;
+	clear: right;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #culture2 {
+	clear: right;
+	float: right;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #webmaster {
+	clear: left;
+	float: left;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #social {
+	clear: right;
+	float: right;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #bkic1 {
+	clear: left;
+	float: left;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea {
+	background-color: #f7f7f7;
+	border: 1px solid #666;
+	font-size: 10pt;
+}
+
+#wrapper #bodyArea #bkic2 {
+	clear: right;
+	float: right;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #fresh1 {
+	clear: left;
+	float: left;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #fresh2 {
+	clear: right;
+	float: right;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #fresh3 {
+	clear: left;
+	float: left;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #historian {
+	clear: right;
+	float: right;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #pr {
+	clear: left;
+	float: left;
+	width: 50%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #culture1 {
+	clear: left;
+	float: left;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #jrep {
+	clear: right;
+	float: right;
+	width: 50%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+#wrapper #bodyArea #president #ppic {
+	float: left;
+}
+#wrapper #bodyArea #president #ptext {
+	float: right;
+	width: 240px;
+	height: 200px;
+}
+#wrapper #bodyArea #vice #vpic {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #vice #vtext {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #secretary #spic {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #secretary #stext {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #treasurer #tpic {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #treasurer #ttext {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #pr #prpic {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #pr #prtext {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #jrep #jpic {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #jrep #jtext {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #culture1 #cpic1 {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #culture1 #ctext1 {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #culture2 #cpic2 {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #culture2 #ctext2 {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #webmaster #wpic {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #webmaster #wtext {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #social #scpic {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #social #sctext {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #bkic1 #bkpic1 {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #bkic1 #bktext1 {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #bkic2 #bkpic2 {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #bkic2 #bktext2 {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #fresh1 #fpic1 {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #fresh1 #ftext1 {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+p {
+	font-size: 14px;
+}
+
+#wrapper #bodyArea #fresh2 #fpic2 {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #fresh2 #ftext2 {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #fresh3 #fpic3 {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #fresh3 #ftext3 {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
+#wrapper #bodyArea #historian #hpic {
+	float: left;
+	height: 200px;
+	width: 150px;
+}
+#wrapper #bodyArea #historian #htext {
+	float: right;
+	height: 200px;
+	width: 240px;
+}
