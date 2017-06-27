@@ -1,6 +1,6 @@
 ### KSA WEB DEVELOPMENT
 
-Design: Very modern design, make use of fadeIn() in JQ, and big background pictures, MINIMALISTIC STYLE
+Design: Very clean modern design, make use of fadeIn() in JQ, and big background pictures, MINIMALISTIC STYLE
 *Open to any suggestions
 
 1. Home Page
