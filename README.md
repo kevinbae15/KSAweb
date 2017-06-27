@@ -14,4 +14,6 @@ Points:
 
 Current Website: http://ase.tufts.edu/ksa/index1.html
 
+Tuft's Website Development Policy: https://it.tufts.edu/qs-webserv-apppol
+
 ***Open to any suggestions!!!
