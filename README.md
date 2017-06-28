@@ -24,4 +24,5 @@ https://www.bigdropinc.com/work/sapience-advisory/
 https://www.bigdropinc.com/work/samsung-next/
 
 All files for the new website is in folder "NEW"
+
 ***Open to any suggestions!!!
