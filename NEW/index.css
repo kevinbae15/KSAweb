@@ -58,14 +58,16 @@ h1{
   left:0;
   width:100%;
   z-index: -1;
-  opacity: .5;
+  
 }
 
 #intro{
   text-align: center;
   position: absolute;
+  width: 100%;
+  height: 100%;
   top:40%;
-  left:25%;
+  font-size: 250%;
 }
 
 
