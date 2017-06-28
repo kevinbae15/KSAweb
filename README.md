@@ -17,4 +17,10 @@ Current Website: http://ase.tufts.edu/ksa/index1.html
 
 Tuft's Website Development Policy: https://it.tufts.edu/qs-webserv-apppol
 
+Websites for Inspiration:
+
+https://www.bigdropinc.com/work/phosphorus/
+https://www.bigdropinc.com/work/sapience-advisory/
+https://www.bigdropinc.com/work/samsung-next/
+
 ***Open to any suggestions!!!
