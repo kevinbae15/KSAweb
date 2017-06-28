@@ -38,5 +38,10 @@ Need:
     <head>
       <link rel="shortcut icon" type="image/x-icon" href="example.ico" />
     </head>
+    
+Problems:
+  - Proper sizes for each page based on different screens
+  - How to account for people making the webpage smaller, bigger, etc.
+     use: http://gijsroge.github.io/priority-nav.js/#
   
   
