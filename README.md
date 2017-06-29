@@ -1,4 +1,4 @@
-### KSA WEB DEVELOPMENT
+# KSA WEB DEVELOPMENT
 
 Design: Very clean modern design, make use of fadeIn() in JQ, and big background pictures, MINIMALISTIC STYLE
 *Open to any suggestions*
@@ -18,7 +18,7 @@ Design: Very clean modern design, make use of fadeIn() in JQ, and big background
 ## Navigation bar:  
   Left-side, black bar where there will be navigation icons that will take the user to different parts of the webpage via smooth scroll
 
-# Points: 
+## Points: 
 1. Include facebook link/embedding
 2. Include a gallery?
 3. Make the whole website a continuous page where certain links will take the user to certain points of the webpage
@@ -39,7 +39,7 @@ All files for the new website is in folder "NEW"
 ***Open to any suggestions!!!***
 
 
-# UPDATES:
+## UPDATES:
 
 Just updated and made the basic layout for the homepage
 Need: 
