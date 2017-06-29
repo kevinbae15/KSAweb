@@ -2,6 +2,8 @@
   /*border: 1px solid rgba(0, 0, 0, 0.3);*/
   font-family: 'Open Sans',sans-serif;
   color: white;
+  margin:0;
+  padding:0;
 }
 
 *{
@@ -12,13 +14,18 @@
    user-select: none;
 }
 
+/*This still works!!!*/
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
 body{
   margin:0;
   
-}
-
-h1{
-  margin: auto;
 }
 
 #naviList{
@@ -69,8 +76,9 @@ h1{
 }
 
 #page2{
-  top:1000px;
-  left:0;
+  position:relative;
+  height: 850px;
+  width: 100%;
 }
 
 .photo{
@@ -79,6 +87,17 @@ h1{
   filter: brightness(50%);
   width: 100%;
   z-index: -1;  
+}
+
+#foodphoto{
+  position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  max-height: 100%;
+  filter: brightness(50%);
 }
 
 .intro{
@@ -99,11 +118,30 @@ h1{
 }
 
 #Events{
-  position:absolute;
-  top: 125%;
+  position: absolute;
   width: 100%;
   text-align: center;
+  color: black;
+  font-size: 55px;
+  top: 5%;
 }
 
+#eventBoxes{
+  display: flex;
+  justify-content: space-between;
+  height: 75%;
+}
 
-
+#food, #social, #karaoke{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+  color: black;
+  top: 10%;
+  text-align: center;
+  width: 23%;
+  height: 50%;
+  margin: auto;
+  overflow: hidden;
+  
+}
