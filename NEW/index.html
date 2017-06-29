@@ -5,6 +5,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src = 'index.js'></script>
     <link href = "https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
     <link href = "index.css" type = "text/css" rel = "stylesheet">
     <title>Tufts KSA</title>
   </head>
@@ -16,7 +17,7 @@
       <ul id = naviList>
         <li class = "navigate" ><a href = "#Home" class = "nav_link">HOME</a></li>
         <li id = "E" class = "navigate"><a href = "#Events" class = "nav_link">EVENTS</a></li>
-        <li class = "navigate"><a href = "#Culture Shows" class = "nav_link">CULTURE SHOWS</a></li>
+        <li id = "CS" class = "navigate"><a href = "#CultureShow" class = "nav_link">CULTURE SHOWS</a></li>
         <li class = "navigate"><a href = "#Who are We" class = "nav_link">WHO WE ARE</a></li>
       </ul>
     </div>
@@ -25,7 +26,6 @@
       
     <div id = "page1" class = "pages">
       <img src = "" id = "logo">
-      <img src = "photos/14380153_1046926042092986_6683837706259614007_o.jpg" class = photo>
       <h1 id = intro class = intro>TUFTS'<br>KSA</h1>
     </div>
     
@@ -33,20 +33,77 @@
     
     
     <div id = "page2" class = "pages">
-      <!---->
       <h2 id = "Events"> Events</h2>
       <div id = "eventBoxes">
-        <div id = food>
+        <div id = "food">
           <img src = "photos/338993_274652942653637_2007165754_o.jpg" id = foodphoto>
-          <h2 id = foodTitle>Food</h2>
+          <h2 id = foodTitle>Indulge</h2>
+          <div class = "container overlayf"><p id = 'foodP'>There is no better way to spread Korean culture than over a hot dish of popular Korean cuisines. Best thing is, they are free!</p></div>
+        </div>
+        <div id = meeting>
+          <img src = "photos/14380153_1046926042092986_6683837706259614007_o.jpg" id = meetingphoto>
+          <h2 id = meetingTitle>Engage</h2>
+          <div class = "container overlaym"><p id = 'meetingP'>There is no better way to spread Korean culture than over a hot dish of popular Korean cuisines. Best thing is, they are free!</p></div>
         </div>
         <div id = social>
-          SOCIAL
+          <img src = "photos/11223331_851168628335396_6503384544113623438_o.jpg" id = socialphoto>
+          <h2 id = socialTitle>Experience</h2>
+          <div class = "container overlays"><p id = 'socialP'>There is no better way to spread Korean culture than over a hot dish of popular Korean cuisines. Best thing is, they are free!</p></div>
         </div>
-        <div id = karaoke>
-          KARAOKE
-        </div>
+        
       </div>
+    </div>
+    
+    <div id = "page3" class = "pages">
+      <div id = CSdes>
+        <h1 id = CStitle>Join Us</h1>
+        <p id = CSparagraph>The biggest event of the year, KSA's Annual Culture Show! Every year is themed in an interesting way. Come to see performances such as taekwondo, rap, and our dances! Blah blah blah talk about the culture show and how theres amazing food and the videos and individual break group dancers etc. Just trying to fill up space at this point. Filling up more space in this long paragraph. By the way, I am not too sure about this font so if you have any suggestions about this specific font for this section, please tell!</p>
+      </div>
+      
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1/6</div>
+          <img src="photos/18077246_1270638873055034_6379647260826066397_o.jpg" style="width:100%">
+          
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2/6</div>
+          <img src="photos/18076986_1270660899719498_5235971240814033714_o.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3/6</div>
+          <img src="photos/18077123_1270643013054620_4136229928621326234_o.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4/6</div>
+          <img src="photos/18077286_1270648216387433_9064224945542994681_o.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5/6</div>
+          <img src="photos/18056585_1270659489719639_89594649571505729_o.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6/6</div>
+          <img src="photos/18076926_1270659633052958_4677450651536787884_o.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+          
+      </div>
+      </div>
+      <br>
+
+      
     </div>
     
   </body>
