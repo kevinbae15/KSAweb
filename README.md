@@ -22,6 +22,7 @@ Design: Very clean modern design, make use of fadeIn() in JQ, and big background
 1. Include facebook link/embedding
 2. Include a gallery?
 3. Make the whole website a continuous page where certain links will take the user to certain points of the webpage
+4. Make sure to give credit for photos, code
 
 Current Website: http://ase.tufts.edu/ksa/index1.html
 
