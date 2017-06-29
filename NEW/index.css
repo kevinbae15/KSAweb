@@ -34,7 +34,7 @@ body{
   padding: 10px 0;
   margin: 0px;
   position: absolute;
-  top: 450px;
+  top: 85%;;
   overflow: hidden;
   text-align: center;
 }
@@ -42,7 +42,7 @@ body{
 .navigate{
   display: inline;
   padding: 0px;
-  margin: 0px 50px;
+  margin: 0px 75px;
   float: none;
   font-weight: 500;
 }
@@ -89,33 +89,21 @@ body{
   z-index: -1;  
 }
 
-#foodphoto{
-  position: absolute;
-    top: -9999px;
-    bottom: -9999px;
-    left: -9999px;
-    right: -9999px;
-    margin: auto;
-  max-height: 100%;
-  filter: brightness(50%);
-}
+
 
 .intro{
-  text-align: center;
+  text-align: left;
   position: absolute;
-  width: 100%;
   
 }
 
 #intro{
-  font-size: 250%;
-  top:40%;
+  font-size: 750%;
+  font-weight: 500;
+  top:20%;
+  left: 18%;
 }
 
-#intro2{
-  font-size: 100%;
-  top: 50%;
-}
 
 #Events{
   position: absolute;
@@ -144,4 +132,22 @@ body{
   margin: auto;
   overflow: hidden;
   
+}
+
+#foodphoto{
+  position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  max-height: 100%;
+  filter: brightness(70%);
+}
+
+#foodTitle{
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  color: whitesmoke;
 }
