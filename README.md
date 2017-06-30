@@ -10,7 +10,7 @@ Design: Very clean modern design, make use of fadeIn() in JQ, and big background
   - Display three boxes with each type of event (Food, Open Meetings, and Social)
 3. Culture Show Page
   - Slideshow gallery
-4. Extra (thinking of a new name)
+4. Extra (thinking of a new name)  
   Highlights:  
     - Gajok system (family)
     - KSA BBBS
