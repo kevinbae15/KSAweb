@@ -7,16 +7,21 @@ Design: Very clean modern design, make use of fadeIn() in JQ, and big background
 ## One long webpage setup
 1. Home Page
 2. Events Page
-  - Display three boxes with each type of event (food, social, culture show)
+  - Display three boxes with each type of event (Food, Open Meetings, and Social)
 3. Culture Show Page
   - Slideshow gallery
+4. Extra (thinking of a new name)
+  Highlights:  
+    - Gajok system (family)
+    - KSA BBBS
 4. E-Board Member Page / About Us Page
   - Displays everyone on e-board
-  - Alumni Page???
+  - Alumni Page??? (probably not, but we can still discuss later)
   - Display our club message and goals
  
 ## Navigation bar:  
   Left-side, black bar where there will be navigation icons that will take the user to different parts of the webpage via smooth scroll
+  use fa-fa ions!!!
 
 ## Points: 
 1. Include facebook link/embedding
@@ -42,7 +47,8 @@ All files for the new website is in folder "NEW"
 
 ## UPDATES:
 
-Just updated and made the basic layout for the homepage
+Included new font ("UNISANS")
+
 Need: 
   - Logos on the homepage
   - .ico file for the icon on the tabs  
@@ -54,5 +60,6 @@ Problems:
   - Proper sizes for each page based on different screens
   - How to account for people making the webpage smaller, bigger, etc.  
      use: http://gijsroge.github.io/priority-nav.js/#
+  - Been only using % for sizes (is that bad or nah???)
   
   
