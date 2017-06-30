@@ -25,6 +25,11 @@ $(document).ready(function(){
         scrollTop: $("#page4").offset().top + 5
     }, 2000);
   });
+  $("#AU").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#page5").offset().top + 5
+    }, 2250);
+  });
   
   
 var slideIndex = 1;
