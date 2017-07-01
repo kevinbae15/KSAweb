@@ -14,7 +14,7 @@ Design: Very clean modern design, make use of fadeIn() in JQ, and big background
   Highlights:  
     - Gajok system (family)
     - KSA BBBS
-4. E-Board Member Page / About Us Page
+5. E-Board Member Page / About Us Page
   - Displays everyone on e-board
   - Alumni Page??? (probably not, but we can still discuss later)
   - Display our club message and goals
@@ -47,14 +47,13 @@ All files for the new website is in folder "NEW"
 
 ## UPDATES:
 
-Included new font ("UNISANS")
+Included new super thin font
+Included slide in animations
 
 Need: 
-  - Logos on the homepage
-  - .ico file for the icon on the tabs  
-    `<head>`  
-      `<link rel="shortcut icon" type="image/x-icon" href="example.ico" />`  
-    `</head>`
+  - BETTER PICTURES!!!!!
+  - The event page looks kind of empty
+  - The layout and font of Culture Show page needs to modified
     
 Problems:
   - Proper sizes for each page based on different screens
