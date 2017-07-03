@@ -24,7 +24,7 @@ $(document).ready(function(){
   });
   $("#EX").click(function() {
     $('html, body').animate({
-        scrollTop: $("#page4").offset().top + 5
+        scrollTop: $("#page4").offset().top
     }, 2000);
   });
   $("#AU").click(function() {
