@@ -20,17 +20,17 @@ $(document).ready(function(){
   $("#CS").click(function() {
     $('html, body').animate({
         scrollTop: $("#page3").offset().top + 5
-    }, 1500);
+    }, 1150);
   });
   $("#EX").click(function() {
     $('html, body').animate({
         scrollTop: $("#page4").offset().top
-    }, 2000);
+    }, 1500);
   });
   $("#AU").click(function() {
     $('html, body').animate({
         scrollTop: $("#page5").offset().top + 5
-    }, 2250);
+    }, 1750);
   });
   
   

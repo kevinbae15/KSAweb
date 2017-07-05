@@ -85,8 +85,9 @@ p{
 }
 
 #page1{
-  background-image: url('photos/14380153_1046926042092986_6683837706259614007_o.jpg');
-  min-height: 125vh; 
+  width: 100%;
+  background-image: url('photos/18076926_1270659633052958_4677450651536787884_o.jpg');
+  min-height: 115vh; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -105,7 +106,7 @@ p{
 #page3{
   position: relative;
   background-image: url('photos/17966215_1270647966387458_8435115631044933184_o.jpg');
-  min-height: 1500px; 
+  min-height: 220vh; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -221,12 +222,15 @@ p{
 
 #foodphoto, #socialphoto, #meetingphoto{
   position: absolute;
+  display: block;
   top: -9999px;
   bottom: -9999px;
   left: -9999px;
   right: -9999px;
   margin: auto;
-  max-height: 100%;
+  max-width = 100%;
+  height: auto;
+
   filter: brightness(70%);
 }
 
@@ -468,8 +472,11 @@ p{
 
 #Gphotos{
   position:absolute;
-  top: -20%;
+  top: -35%;
   filter: brightness(100%);
+  display: block;
+  max-width = 100px;
+  height: auto;
 }
 
 #Bphotos{
