@@ -14,7 +14,7 @@ $(document).ready(function(){
   
   $("#E").click(function() {
     $('html, body').animate({
-        scrollTop: $("#page2").offset().top + 5
+        scrollTop: $("#page2").offset().top
     }, 750);
   });
   $("#CS").click(function() {
@@ -29,7 +29,7 @@ $(document).ready(function(){
   });
   $("#AU").click(function() {
     $('html, body').animate({
-        scrollTop: $("#page5").offset().top + 5
+        scrollTop: $("#page5").offset().top
     }, 1750);
   });
   
