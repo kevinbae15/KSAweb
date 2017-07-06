@@ -46,7 +46,7 @@ p{
   padding: 10px 0;
   margin: 0px;
   position: absolute;
-  top: 97%;;
+  top: 85%;;
   overflow: hidden;
   text-align: center;
 }
@@ -123,14 +123,14 @@ p{
 
 #page5{
   position: relative;
-  background: linear-gradient(black, transparent), url('photos/18077299_1270651123053809_1517508865951383266_o.jpg'); 
-  min-height: 100vh; 
-
+  min-height: 150vh;
   /* Create the parallax scrolling effect */
-  background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+#page6{
+  position: relative;
+  min-height: 100vh;
+  /* Create the parallax scrolling effect */
 }
 
 /********************************************************/
@@ -150,8 +150,8 @@ p{
   text-align: center;
   position: absolute;
   font-size: 1000%;
-  font-weight: 300;
-  top:50%;
+  font-weight: 100;
+  top:55%;
 }
 
 #intro2{
@@ -529,9 +529,54 @@ p{
 /********************************************************/
 /********************************************************/
 
+#EMphotos{
+  position: absolute;
+  display: block;
+  left: 15%;
+  top: 10%;
+  margin: auto;
+  width: 70%; 
+  height: 100vh;
+}
+
+.indiphotos{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  position: relative;
+  height: 33%;
+  width: 25%;
+  float: left;
+}
+
+
+
+/********************************************************/
+/********************************************************/
+
+#AUarea{
+  position:absolute;
+  top:0;
+  height 0%;
+}
+
 #AUphotos{
-  position:fixed;
+  display: block;
+  left: -5%;
+  position:relative;
+  max-width:110%;
+  filter: grayscale(100%);
+}
+
+#AUlayer{
+  background-color: rgba(255,255,255,.90);
+  position: absolute;
+  top: 0;
+  left: 0;
   width:100%;
+  height: 100%;
+  
 }
 
 #AUtitle{
@@ -542,12 +587,13 @@ p{
   text-align: center;
   font-size: 80px;
   overflow: hidden;
+  color: black;
   
 }
 
 #AUtitle:before,
 #AUtitle:after {
-    background-color: white;
+    background-color:black;
     content: "";
     display: inline-block;
     height: 2px;
@@ -565,23 +611,39 @@ p{
 }
 
 #AUmessage{
+  
+  color: black;
   text-align: center;
   position: absolute;
+  vertical-align: middle;
   width: 60%;
+  height: auto;
   left: 20%;
   top: 30%;
-  padding: 5% 7%;
   font-size: 35px;
   line-height:normal; 
-  background-color: rgba(0,0,0,.7);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
 }
 
+/********************************************************/
 
+#endSection{
+  position:absolute;
+  top: 75%;
+  width: 100%;
+  height: 25%;
+  background: #555555;
+}
 
-
-
+#contactUs{
+  text-align: center;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  padding: 0 25%;
+  margin-top: 2%;;
+  line-height: 45px;
+}
 
 
 

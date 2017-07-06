@@ -24,15 +24,19 @@ $(document).ready(function(){
   });
   $("#EX").click(function() {
     $('html, body').animate({
-        scrollTop: $("#page4").offset().top
+        scrollTop: $("#page4").offset().top + 1
     }, 1500);
   });
-  $("#AU").click(function() {
+  $("#EM").click(function() {
     $('html, body').animate({
-        scrollTop: $("#page5").offset().top
+        scrollTop: $("#page5").offset().top + 1
     }, 1750);
   });
-  
+  $("#OG").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#page6").offset().top + 1
+    }, 1750);
+  });
   
 var slideIndex = 1;
 showSlides(slideIndex);
