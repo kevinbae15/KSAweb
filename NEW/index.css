@@ -5,7 +5,7 @@
   color: white;
   margin:0;
   padding:0;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
 }
 
 *{
@@ -123,7 +123,7 @@ p{
 
 #page5{
   position: relative;
-  min-height: 150vh;
+  min-height: 250vh;
   /* Create the parallax scrolling effect */
 }
 
@@ -536,20 +536,94 @@ p{
   top: 10%;
   margin: auto;
   width: 70%; 
-  height: 100vh;
+  height: 200vh;
 }
 
-.indiphotos{
+.flip-container{
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 0;
   padding: 0;
   display: inline-grid;
   position: relative;
-  height: 33%;
+  height: 20%;
   width: 25%;
   float: left;
+  overflow: hidden;
 }
 
+/* entire container, keeps perspective */
+.flip-container{
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .indiphotos, .flip-container.hover .indiphotos {
+		transform: rotateY(180deg);
+	}
+
+.front, .back {
+	width: 100%;
+  height: 100%;
+}
+
+/* flip speed goes here */
+.indiphotos {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+  
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  background-color: white;
+  color: black;
+  padding: 10%;
+  font-weight: 300;
+  font-size: 70%;
+  border: 7px solid rgb(255, 36, 0);
+}
+
+.name{
+  color:black;
+  font-size: 180%;
+  font-weight: 300;
+}
+
+.position{
+  color: black;
+  font-size: 150%;
+  position: absolute;
+  top: 85%;
+  font-weight: 300;
+}
+
+.EBPhoto{
+ max-height:100%;
+  position: absolute;
+  display: block;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
 
 
 /********************************************************/
@@ -559,13 +633,13 @@ p{
   position:absolute;
   top:0;
   height 0%;
+  overflow: hidden;
 }
 
 #AUphotos{
-  display: block;
   left: -5%;
   position:relative;
-  max-width:110%;
+  width:120%;
   filter: grayscale(100%);
 }
 
