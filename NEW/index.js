@@ -1,6 +1,6 @@
 window.onload = function() {
     $('html, body').animate({
-        scrollTop: $("#page1").offset().top + 80
+        scrollTop: $("#page1").offset().top + 20
     }, 900);
 };
 

@@ -5,7 +5,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="photos/B&W%20BACK%202017%20(DBlue).png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src = 'index.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,400" rel="stylesheet">
     <link href = "index.css" type = "text/css" rel = "stylesheet">
     <title>Tufts KSA</title>
   </head>
@@ -28,6 +29,7 @@
     <div id = "page1" class = "pages">
       <img src = "photos/BACK (White).png" id = "logo">
       <h1 id = intro class = intro>TUFTS KSA</h1>
+      <div id = homeLayer></div>
      
     </div>
     
@@ -35,7 +37,12 @@
     
     
     <div id = "page2" class = "pages">
-      <h1 id = "Events" class = headers>EVENTS</h1>
+      <div id = EVENTlayer1></div>
+      <div id = EVENTlayer2></div>
+      <div id = EVENTlayer3></div>
+      <img src = "photos/15325263_1127581924027397_4168314277036798687_o.jpg" id = eventPIC>
+      <h1 id = "Events" class = "animation-element slide-left">Hang out <br>with us</h1>
+      <h2 id = "eventP" class = "animation-element slide-left">Come out to our events which can include a lot of free food or even a lot of game night or open meetings. Some of our highlighted events can include the national holiday of Korea, Peppero Day.</h2>
       <div id = "eventBoxes">
         <div id = "food">
           <img src = "photos/338993_274652942653637_2007165754_o.jpg" id = foodphoto width = 700 height = 700>
@@ -57,6 +64,7 @@
     </div>
     
     <div id = "page3" class = "pages">
+      <div id = CSlayer></div>
       <div id = CSdes >
         <h1 id = CStitle class = "animation-element slide-left">Join Us</h1>
         <p id = CSparagraph class = "animation-element slide-left">The biggest event of the year, KSA's Annual Culture Show! Every year is themed in an interesting way. Come to see performances such as taekwondo, rap, and our dances! Blah blah blah talk about the culture show and how theres amazing food and the videos and individual break group dancers etc. Just trying to fill up space at this point. Filling up more space in this long paragraph.</p>
@@ -137,8 +145,8 @@
         </div>
         <div class = flip-container ontouchstart="this.classList.toggle('hover');">
           <div class = indiphotos>
-            <div class = front></div>
-            <div class = back></div>
+            <div class = front><img class = EBPhoto src = "photos/7706127_7706127-R2-004-0A.jpg"></div>
+            <div class = back><h1 class = name>Justin Jo</h1><br><br> Majoring in Computer Engineering<br>From San Rafael, CA<br>Loves soondubu<br>Class of 2018<br><br><hi class = position>PAC Rep</hi></div>
           </div>
         </div>
         <div class = flip-container ontouchstart="this.classList.toggle('hover');">

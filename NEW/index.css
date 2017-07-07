@@ -41,9 +41,9 @@ p{
 /********************************************************/
 
 #naviList{
-  
+  font-size: 19px;
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0;
   margin: 0px;
   position: absolute;
   top: 85%;;
@@ -54,9 +54,8 @@ p{
 .navigate{
   display: inline;
   padding: 0px;
-  margin: 0px 75px;
+  margin: 0px 65px;
   float: none;
-  font-weight: 500;
 }
 
 .nav_link{
@@ -99,7 +98,7 @@ p{
 #page2{
   position:relative;
 /*  height: 850px;*/
-  height: 100vh;
+  height: 160vh;
   width: 100%;
 }
 
@@ -150,19 +149,8 @@ p{
   text-align: center;
   position: absolute;
   font-size: 1000%;
-  font-weight: 100;
+  font-weight: 400;
   top:55%;
-}
-
-#intro2{
-  border-top: 1px solid white;
-  position: absolute;
-  font-size: 200%;
-  top:75%;
-  width:80%;
-  left:10%;
-  padding-top: 2%;
-  margin-top: 2%;
 }
 
 #logo{
@@ -170,39 +158,90 @@ p{
   top: 15%;
   left: 40%;
   width: 20%;
-  
-  
 }
+
+#homeLayer{
+  background: linear-gradient(to bottom,transparent,rgba(255,255,255,.99) 100%);
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  width:100%;
+  height: 3%;
+  z-index: 0;
+}
+
+
+
 
 /********************************************************/
 /********************************************************/
+
+#eventPIC{
+  position:absolute;
+  top: -10%;
+  left:0;
+  height: 70%;
+  filter: contrast(100%);
+  z-index: -1;
+}
+
+ /*background: linear-gradient(to bottom,transparent,rgba(255,255,255,100) 80%),linear-gradient(to top,transparent,rgba(255,255,255,.90) 90%),linear-gradient(to right,transparent,rgba(255,255,255,.90) 95%);*/
+#EVENTlayer1{
+  background: linear-gradient(to bottom,transparent,rgba(255,255,255,.99) 40%);
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width:100%;
+  height: 70%;
+  z-index: 0;
+}
+
+#EVENTlayer2{
+  background: linear-gradient(to right,transparent,rgba(255,255,255,.99) 75%);
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  width:80%;
+  height: 100%;
+  z-index: 0;
+}
+#EVENTlayer3{
+  background: linear-gradient(to top,transparent,rgba(255,255,255,.92) 100%);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width:100%;
+  height: 10%;
+  z-index: 0;
+}
 
 #Events{
-  font-weight: 300;
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: black;
   font-size: 80px;
-  top: 5%;
+  font-weight: 800;
+  position: absolute;
+  color: black;
+  top: 8%;
+  width: 30%;
    overflow: hidden;
+  right: 5%;
+  line-height: 80px;
 }
 
-#Events:before,
-#Events:after {
-    background-color: black;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
+#eventP{
+  color: black;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  font-size: 20px;
+  font-weight: 100;
+width: 30%;
+line-height: normal;
 }
 
 #eventBoxes{
   display: flex;
   justify-content:space-between;
-  height: 75%;
+  height: 53%;
 }
 
 #food, #social, #meeting{
@@ -210,10 +249,10 @@ p{
   border-radius: 10px;
   position: relative;
   color: black;
-  top: 25%;
+  top: 97%;
   text-align: center;
   width: 23%;
-  height: 50%;
+  height: 40%;
   margin: auto;
   overflow: hidden;
 }
@@ -231,7 +270,7 @@ p{
   max-width = 100%;
   height: auto;
 
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 
 #foodTitle, #socialTitle, #meetingTitle{
@@ -241,9 +280,13 @@ p{
   color: whitesmoke;
   z-index: 1000;
   transition: .5s ease;
+  font-weight: 400;
 }
 
 #foodP, #socialP, #meetingP{
+  width: 75%;
+  font-family: Lato,sans-serif;
+  font-weight: 100;
   color: white;
   font-size: 15px;
   position: absolute;
@@ -324,6 +367,16 @@ p{
 
 /********************************************************/
 /********************************************************/
+
+#CSlayer{
+  background: linear-gradient(to top,transparent,rgba(255,255,255,1) 100%);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width:100%;
+  height: 5px;
+  z-index: 0;
+}
 
 #CSphoto{
   width: 100%;
@@ -595,7 +648,7 @@ p{
   background-color: white;
   color: black;
   padding: 10%;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 70%;
   border: 7px solid rgb(255, 36, 0);
 }
@@ -603,7 +656,7 @@ p{
 .name{
   color:black;
   font-size: 180%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .position{
@@ -611,7 +664,7 @@ p{
   font-size: 150%;
   position: absolute;
   top: 85%;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .EBPhoto{
@@ -654,7 +707,7 @@ p{
 }
 
 #AUtitle{
-  font-weight: 300;
+  font-weight: 400;
   position: absolute;
   width:100%;
   top: 5%;
@@ -674,14 +727,6 @@ p{
     position: relative;
     vertical-align: middle;
     width: 50%;
-}
-.headers:before {
-    right: 0.5em;
-    margin-left: -50%;
-}
-.headers:after {
-    left: 0.5em;
-    margin-right: -50%;
 }
 
 #AUmessage{
