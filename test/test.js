@@ -1,5 +1,6 @@
 var first = true;
 var open = false;
+
 function openNav() {
   document.getElementById("pagepiling").style.marginLeft = "-38%";
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
