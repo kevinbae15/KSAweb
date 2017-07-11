@@ -233,9 +233,9 @@ p{
   top: 25%;
   right: 5%;
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
 width: 30%;
-line-height: normal;
+line-height: 35px;
 }
 
 #eventBoxes{
@@ -593,7 +593,7 @@ line-height: normal;
 }
 
 .flip-container{
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
   margin: 0;
   padding: 0;
   display: inline-grid;
