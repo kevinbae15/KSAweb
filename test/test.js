@@ -1,123 +1,66 @@
-var first = true;
-var open = false;
+var FadeTransition = Barba.BaseTransition.extend({
+  start: function() {
+    /**
+     * This function is automatically called as soon the Transition starts
+     * this.newContainerLoading is a Promise for the loading of the new container
+     * (Barba.js also comes with an handy Promise polyfill!)
+     */
 
-function openNav() {
-  document.getElementById("pagepiling").style.marginLeft = "-38%";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+    // As soon the loading is finished and the old page is faded out, let's fade the new page
+    Promise
+      .all([this.newContainerLoading, this.fadeOut()])
+      .then(this.fadeIn.bind(this));
+  },
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-  
-  document.getElementById("pagepiling").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-}
+  fadeOut: function() {
+    /**
+     * this.oldContainer is the HTMLElement of the old Container
+     */
 
-function myFunction(x) {
-  x.classList.toggle("change");
-  if(open == false){
-    openNav();
-    open = true;
-  }
-  else{
-    closeNav();
-    open = false;
-  }
-  
-}
+    return $(this.oldContainer).animate({ opacity: 0 },1000,function(){}).promise();
+  },
 
-window.onload = (function () { 
-     document.getElementById("navi").style.width = "38%";
-  
-  
-    $('#pagepiling').pagepiling({
-      verticalCentered: false,
-      scrollingSpeed: 500,
-      css3: false,
-      sectionSelector: '.page',
-      //anchors: ['page1', 'page2', 'page3','page4'],
-      onLeave: function (index, nextIndex, direction) {
-        //fading out the text of the leaving section
-        //$('.section').eq(index - 1).find('h1, p').fadeOut(700, 'easeInQuart');
+  fadeIn: function() {
+    /**
+     * this.newContainer is the HTMLElement of the new Container
+     * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
+     * Please note, newContainer is available just after newContainerLoading is resolved!
+     */
 
-        //fading in the text of the destination (in case it was fadedOut)
-        //$('.section').eq(nextIndex - 1).find('h1, p').fadeIn(700, 'easeInQuart');
-      },
-      afterRender: function(){
-      
-		    
-        //$('.animation-heading1').hide("fast",function() {
-    // Use arguments.callee so we don't need a named function
-        $('.img1').addClass('in-view');
-      
-        //$('.img1').hide();
-      },
-      afterLoad: function(anchorLink, index){
-        if(index == 1){
-          $('.animation-element1').addClass('in-view');
-          $('.animation-element2').removeClass('in-view');
-          $('.animation-element3').removeClass('in-view');
-          $('.animation-element4').removeClass('in-view');
-          $('.animation-heading1').addClass('in-view');
-          $('.animation-heading2').removeClass('in-view');
-          $('.animation-heading3').removeClass('in-view');
-          $('.animation-heading4').removeClass('in-view');
-          $('.img1').addClass('in-view');
-          $('.img2').removeClass('in-view');
-          $('.img3').removeClass('in-view');
-          $('.img4').removeClass('in-view');
-        }
-        if(index == 2){
-          $('.animation-element1').removeClass('in-view');
-          $('.animation-element2').addClass('in-view');
-          $('.animation-element3').removeClass('in-view');
-          $('.animation-element4').removeClass('in-view');
-          $('.animation-heading1').removeClass('in-view');
-          $('.animation-heading2').addClass('in-view');
-          $('.animation-heading3').removeClass('in-view');
-          $('.animation-heading4').removeClass('in-view');
-          $('.img1').removeClass('in-view');
-          $('.img2').addClass('in-view');
-          $('.img3').removeClass('in-view');
-          $('.img4').removeClass('in-view');
-          
-        }
-        if(index == 3){
-          $('.animation-element1').removeClass('in-view');
-          $('.animation-element2').removeClass('in-view');
-          $('.animation-element3').addClass('in-view');
-          $('.animation-element4').removeClass('in-view');
-          $('.animation-heading1').removeClass('in-view');
-          $('.animation-heading2').removeClass('in-view');
-          $('.animation-heading3').addClass('in-view');
-          $('.animation-heading4').removeClass('in-view');
-          $('.img1').removeClass('in-view');
-          $('.img2').removeClass('in-view');
-          $('.img3').addClass('in-view');
-          $('.img4').removeClass('in-view');
-        }
-        if(index == 4){
-          $('.animation-element1').removeClass('in-view');
-          $('.animation-element2').removeClass('in-view');
-          $('.animation-element3').removeClass('in-view');
-          $('.animation-element4').addClass('in-view');
-          $('.animation-heading1').removeClass('in-view');
-          $('.animation-heading2').removeClass('in-view');
-          $('.animation-heading3').removeClass('in-view');
-          $('.animation-heading4').addClass('in-view');
-          $('.img1').removeClass('in-view');
-          $('.img2').removeClass('in-view');
-          $('.img3').removeClass('in-view');
-          $('.img4').addClass('in-view');
-        }
-      }
+    var _this = this;
+    var $el = $(this.newContainer);
+
+    $(this.oldContainer).hide();
+
+    $el.css({
+      visibility : 'visible',
+      opacity : 0
     });
-    $('.animation-heading1').hide();
-  $('.animation-heading1').delay(100).show().addClass('in-view')
-   $('.animation-element1').addClass('in-view');
+
+    $el.animate({ opacity: 1 }, 400, function() {
+      /**
+       * Do not forget to call .done() as soon your transition is finished!
+       * .done() will automatically remove from the DOM the old Container
+       */
+
+      _this.done();
+    });
+  }
 });
 
+/**
+ * Next step, you have to tell Barba to use the new Transition
+ */
 
+Barba.Pjax.getTransition = function() {
+  /**
+   * Here you can use your own logic!
+   * For example you can use different Transition based on the current page or link...
+   */
 
+  return FadeTransition;
+};
 
-
+$(document).ready(function(){
+  Barba.Pjax.start();
+});
