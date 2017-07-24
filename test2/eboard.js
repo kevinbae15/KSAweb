@@ -27,7 +27,3 @@ function myFunction(x) {
   }
   
 }
-
-window.onload = (function(){
-  $(body).fadeIn();
-});

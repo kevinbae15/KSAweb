@@ -46,9 +46,10 @@ p{
 
 #page6{
   position: relative;
-  min-height: 75vh;
+  min-height: 100vh;
   /* Create the parallax scrolling effect */
   width: 100%;
+  overflow: hidden;
 }
 
 
@@ -57,10 +58,10 @@ p{
 #EMphotos{
   position: absolute;
   display: block;
-  left: 15%;
-  top: 10%;
+  left: 0%;
+  top: 0%;
   margin: auto;
-  width: 70%; 
+  width: 100%; 
   height: 200vh;
 }
 
@@ -159,41 +160,19 @@ p{
 }
 
 #AUphotos{
-  left: -5%;
   position:relative;
-  width:120%;
+  left: -250px;
+  height: 100vh;
   filter: grayscale(100%);
 }
 
 #AUlayer{
   background-color: rgba(255,255,255,.90);
   position: absolute;
-  top: 0;
-  left: 0;
+  top:0;
+  left:0;
   width:100%;
   height: 100%;
-}
-
-#AUtitle{
-  font-weight: 400;
-  position: absolute;
-  width:100%;
-  top: 5%;
-  text-align: center;
-  font-size: 80px;
-  overflow: hidden;
-  color: black;
-}
-
-#AUtitle:before,
-#AUtitle:after {
-    background-color:black;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
 }
 
 #AUmessage{
@@ -201,9 +180,9 @@ p{
   text-align: center;
   position: absolute;
   vertical-align: middle;
-  width: 60%;
+  width: 50%;
   height: auto;
-  left: 20%;
+  left: 10%;
   top: 30%;
   font-size: 35px;
   line-height:normal; 
@@ -211,6 +190,242 @@ p{
 
 /********************************************************/
 
+#preload{
+  height:350vh;
+  width:100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+}
 
 
+/*Navigation Styling*/
+/*********************************************************/
 
+#naviBar{
+  height: 520vh;
+  width: 6%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #111;
+  z-index: 10;
+}
+
+/* The side navigation menu */
+.sidenav {
+  font-weight: 100;
+    height: 100%; /* 100% Full-height */
+    width: 6%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    float:right;
+    letter-spacing: 3px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*Menu Button Styling*/
+/*********************************************************/
+
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+  justify-content:center;
+  margin: auto;
+  vertical-align: middle;
+  align-items: center; 
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  z-index: 20;
+}
+
+.bar {
+  background-color: white;
+  margin: auto;
+    width: 30px;
+    height: 1px;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2.5px, 1px) ;
+    transform: rotate(-45deg) translate(-3.3px, 3.7px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6.5px) ;
+    transform: rotate(45deg) translate(-7px, -7.5px) ;
+  
+}
+
+/*Navigation Content*/
+/*********************************************************/
+#navilogo{
+  height: 25%;
+  position: absolute;
+  left: 33%;
+}
+
+#naviheading{
+  width: 290px;
+  font-size: 50px;
+  color:white;
+  font-family: "Yantramanav",sans-serif;
+  position:absolute;
+  top: 37%;
+  left: 21%;
+  letter-spacing: 10px;
+  font-weight: 100;
+}
+
+#navilinks{
+  font-family: "Lato",sans-serif;
+  font-weight: 100;
+  position: absolute;
+  top: 47%;
+  float: left;;
+  left: 44%;
+}
+
+
+.links{
+  overflow: hidden;
+  position:absolute;
+  padding-top: 20px;
+  line-height: 35px;
+}
+
+.links:after{
+  border-bottom: 1px solid white;
+  position: absolute;
+  width: 0%;
+  content: '';
+  transition: 0.5s;
+  left: 0;
+  bottom: 0;
+}
+
+.active:after{
+  width: 100%;
+}
+
+.links:hover::after{
+  width: 100%;
+}
+
+
+/*Contact Info*/
+#contactInfo{
+  width: 100%;
+  height: 15%;
+  font-size: 8px;
+  position: absolute;
+  bottom: 2%;
+  left: 50px;
+  font-family: "Lato",sans-serif;
+  letter-spacing: 4px;
+  color: white;
+}
+
+h2{
+  font-weight: 100;
+  margin-top: 40px;
+  padding-left: 100px;
+}
+
+.fa{
+  color:white;
+  font-size: 10%;
+  position: absolute;
+  top: 40px;
+  cursor:pointer;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-facebook{
+  left:200px;
+}
+
+.fa-youtube-play{
+  left: 235px;
+}
+
+.fa-envelope-open{
+  left: 280px;
+}
+
+.fa-facebook:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-youtube-play:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-envelope-open:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+/********************************************************/
+
+/*Holds all boxes*/
+#container{
+  min-height: 290vh;
+  width: 82%;
+  margin: 75px 12% 75px auto;
+  box-sizing: border-box;
+  margin-left: 6%;
+  transition: margin-left .5s;
+  
+}

@@ -74,6 +74,8 @@ img {
     color: #f1f1f1;
 }
 
+
+
 #navilinks{
   font-family: "Lato",sans-serif;
   position: absolute;
@@ -89,6 +91,7 @@ img {
   line-height: 35px;
 }
 
+
 .links:after{
   border-bottom: .1px solid white;
   position: absolute;
@@ -97,6 +100,10 @@ img {
   transition: 0.5s;
   left: 0;
   bottom: 0;
+}
+
+.active:after{
+  width: 100%;
 }
 
 .links:hover::after{
