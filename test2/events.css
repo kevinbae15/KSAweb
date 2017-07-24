@@ -315,6 +315,47 @@ h2{
 
 /********************************************************/
 
+
+#head-events{
+  color:white;
+  position: absolute;
+  font-family: "Yantramanav",sans-serif;
+  font-size: 150px;
+  letter-spacing: 55px;
+  left: 13%;
+  top: 20%;
+}
+
+#head-bbbs{
+  color:white;
+  position: absolute;
+  font-family: "Yantramanav",sans-serif;
+  font-size: 150px;
+  letter-spacing: 55px;
+  left: 23%;
+  top: 20%;
+}
+
+#head-us{
+  color:white;
+  position: absolute;
+  font-family: "Yantramanav",sans-serif;
+  font-size: 150px;
+  letter-spacing: 55px;
+  left: 20%;
+  top: 20%;
+}
+
+#photo-bbbs{
+  top: -9800px;
+}
+
+#photo-us{
+  top: -9925px;
+}
+
+/********************************************************/
+
 #foodphoto, #socialphoto, #meetingphoto{
   filter: brightness(80%);
 }

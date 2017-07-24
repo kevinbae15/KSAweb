@@ -56,7 +56,7 @@ img {
     right: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.4s;
+    transition: 0.1s;
     padding-top: 60px;
   transition-timing-function: cubic-bezier(.1, .3, 0.15, 1);
 }
