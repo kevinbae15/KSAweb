@@ -1,3 +1,7 @@
+# UPDATE #
+Please look at folder "test2" to see final format
+
+
 # KSA WEB DEVELOPMENT
 
 Design: Very clean modern design, MINIMALISTIC STYLE
