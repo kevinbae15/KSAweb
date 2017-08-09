@@ -26,14 +26,15 @@
   </head>
   
   <body>
-    <!--Navigation Bar-->
-    <div id = naviBar>
-    </div>
+    
+    <div id = naviBar></div>
 
     <!--Pop Up Navigation Div-->
     <div id="mySidenav" class="sidenav">
       <!--Logo-->
-      <img id = navilogo src = "photos/BACK%20(White).png">
+      <div id = logodiv>
+      <img id = navilogo src = "photos/BACK%20(White).png" width = 200>
+      </div>
       <h1 id = naviheading>Tufts KSA</h1>
       <!--Links to different webpages-->
       <div id = navilinks>
@@ -44,132 +45,160 @@
       </div>
       <!--Facebook, Youtube, and Email-->
       <div id = contactInfo>
-        <h2 id>Connect:</h2>
-        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-        <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-        <i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i>
+        <div id = contact-head>
+          <h2>Connect:</h2>
+          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
 
     <!--Menu Button-->
     <div class="menu-container material-icons" id = menu onclick="myFunction(this);">
       <div id = barCont>
-        <div class="bar bar1"></div>
-        <div class="bar bar2"></div>
-        <div class="bar bar3"></div>
+        <div class="bar bar1" id = bar1></div>
+        <div class="bar bar2" id = bar2></div>
+        <div class="bar bar3" id = bar3></div>
       </div>
     </div>
     
     
+    <div id = "page6" class = "pages">
+      <div id = AUarea>
+        <img src = "photos/18077299_1270651123053809_1517508865951383266_o.jpg" id = AUphotos>
+        <div id = AUlayer></div>
+        <div id = message_head>
+          <p id = AUmessage>"Tufts KSA is a TCU funded, student run organization with the purpose of establishing the growth of Korean culture within the student body at Tufts University and creating an open space for cultural discussion and interaction."</p>
+        </div>
+      </div>
+    </div>
+    
     <div id = preload></div>
+    
     <div id = container>
+      <div id = EBtitle>
+        <h1>The Election Board</h1><br><h3>Learn more about everyone of us</h3>
+      </div>
+      
       <div id = "page5" class = "pages" >
         <div id = EMphotos>
           <div class = flip-container ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
-              <div class = front><img class = EBPhoto src = "photos/LEOED1.jpg"> </div>
-              <div class = back><h1 class = name>Leo Dongwoo Lee</h1><br><br> Majoring in Economics and Business<br>From Seoul, South Korea<br>Loves kalbitang<br>Class of 2022<br><br><hi class = position>Media Chair</hi></div>
-            </div>
-          </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front><img class = EBPhoto src = "photos/7706127_7706127-R2-004-0A.jpg"></div>
-              <div class = back><h1 class = name>Justin Jo</h1><br><br> Majoring in Computer Engineering<br>From San Rafael, CA<br>Loves soondubu<br>Class of 2018<br><br><hi class = position>PAC Rep.</hi></div>
+              <div class = front><img class = EBPhoto id = leo src = "photos/18121213_10211048404384766_6797678290569477238_o.jpg"></div>
+              <div class = "back red"><h1 class = name>Gill Eun Kang</h1><br><br>Majoring in Economics and Philosophy<br>From Seoul, South Korea<br>Loves Ganjang Gaejang<br>Class of 2018<br><br><hi class = position>President</hi></div>
             </div>
           </div>
           <div class = flip-container ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
               <div class = front><img class = EBPhoto src = "photos/DSC_0815.JPG"></div>
-              <div class = back></div>
+              <div class = "back blue"><h1 class = name>Kun Woo (Kevin) Lee</h1><br>Majoring in Biopsychology and Philosophy<br>From Irvine, CA<br>Loves samggyupsal<br>Class of 2019<br><br><hi class = position>Vice President</hi></div>
+            </div>
+          </div>
+          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto src = "photos/13996108_10209158355189151_7919550635395136196_o.jpg"></div>
+              <div class = "back red"><h1 class = name>Dennis Kim</h1><br><br>Majoring in Cognitive Brain Science<br>From Clarksville, MD<br>Loves Jjajangmyun<br>Class of 2018<br><br><hi class = position>Senior Advisor</hi></div>
             </div>
           </div>
           <div class = flip-container ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
               <div class = front><img class = EBPhoto src = "photos/Fb propic.jpg"></div>
-              <div class = back></div>
+              <div class = "back blue"><h1 class = name>Justin Koo</h1><br><br>Majoring in Economics and Business<br>From Plainview, NY<br>Loves Ddukbokki<br>Class of 2020<br><br><hi class = position>Culture Chair</hi></div>
             </div>
           </div>
           <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto id = leo src = "photos/Screenshot 2017-07-17 18.15.55.jpeg"> </div>
+              <div class = "back blue"><h1 class = name>Leo Dongwoo Lee</h1><br>Majoring in Economics and Business<br>From Seoul, South Korea<br>Loves kalbitang<br>Class of 2022<br><br><hi class = position>Media Chair</hi></div>
+            </div>
+          </div>
+          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto src = "photos/7706127_7706127-R2-004-0A.jpg"></div>
+              <div class = "back red"><h1 class = name>Justin Jo</h1><br><br>Majoring in Computer Engineering<br>From San Rafael, CA<br>Loves soondubu<br>Class of 2018<br><br><hi class = position>PAC Rep.</hi></div>
+            </div>
+          </div>
+          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto src = "photos/15259453_1220026014758292_1832609191360741187_o.jpg"></div>
+              <div class = "back blue"><h1 class = name>Nayoung Kim</h1><br><br>Majoring in Clinical Psych/ Studio Art<br>From Great Neck, NY<br>Loves Soojaebi<br>Class of 2021<br><br><hi class = position>Culture Chair</hi></div>
+            </div>
+          </div>
+          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto src = "photos/15068382_10209297070322533_3832453677990268822_o.jpg"></div>
+              <div class = "back red"><h1 class = name>Trenton Manns</h1><br><br>Majoring in International Literature and Visual Studies<br>From Michigan<br>Loves Samgyupsal<br>Class of 2019<br><br><hi class = position>Community Rep</hi></div>
+            </div>
+          </div>
+          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto id = leo src = "photos/IMG_5090.jpg"></div>
+              <div class = "back red"><h1 class = name>Jenny Park</h1><br><br>Majoring in Biology<br>From Wellesly, MA<br>Loves japchae<br>Class of 2019<br><br><hi class = position>Treasurer</hi></div>
+            </div>
+          </div>
+          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto src = "photos/17434496_1385418091516202_3181152049264469491_o.jpg"></div>
+              <div class = "back blue"><h1 class = name>Elenna Na</h1><br><br>Majoring in Cognitive Brain Science<br>From Seoul, South Korea<br>Loves Ramen<br>Class of 2019<br><br><hi class = position>Publicity Chair</hi></div>
+            </div>
+          </div>
+          
+          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto src = "photos/15259453_1220026014758292_1832609191360741187_o.jpg"></div>
+              <div class = "back red"><h1 class = name>Nayoung Kim</h1><br><br>Majoring in Biochemistry and Psychology<br>From Winchester, MA<br>Loves 국수<br>Class of 2017<br><br><hi class = position>Alumni Representative</hi></div>
+            </div>
+          </div>
+          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+            <div class = indiphotos>
+              <div class = front><img class = EBPhoto src = "photos/IMG_1202.jpg"></div>
+              <div class = "back blue"><h1 class = name>Kevin Bae</h1><br><br>Majoring in Computer Science<br>From Norwood, NJ<br>Loves Mandoo<br>Class of 2020<br><br><hi class = position>Webmaster/TIT</hi></div>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+      <div id = page7>
+        
+        <div id = ABtitle>
+          <h1>The Alumni Board</h1><br><h3>Learn more about past contributors</h3>
+        </div>
+        <div id = page7-container>
+
+          <div class = flip-container2 ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
               <div class = front><img class = EBPhoto src = "photos/DSC_0080.jpg"></div>
-              <div class = back></div>
+              <div class = "back blue"><h1 class = name>Elim Na</h1><br><br>Majored in Biochemistry and Psychology<br>From Winchester, MA<br>Loves 국수<br>Class of 2017<br></div>
             </div>
           </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+          <div class = flip-container2 ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
+              <div class = front><img class = EBPhoto src = "photos/17157376_10212519757609306_2502980949731733554_o.jpg"></div>
+              <div class = "back red"><h1 class = name>Eujene Yum</h1><br><br>Majored in Economics<br>From Seoul, South Korea<br>Loves 냉면<br>Class of 2017<br></div>
             </div>
           </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+          <div class = flip-container2 ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
+              <div class = front><img class = EBPhoto src = "photos/14047238_10155020000943943_5297335120098177408_o.jpg"></div>
+              <div class = "back blue"><h1 class = name>Lauren Kim</h1><br><br>Majored in Film and Media Studies<br>From Seoul, South Korea<br>Loves 냉면<br>Class of 2017<br></div>
             </div>
           </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+          <div class = flip-container2 ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
+              <div class = front><img class = EBPhoto src = "photos/13308399_1183772704980810_8241363613493925296_o.jpg"></div>
+              <div class = "back red"><h1 class = name>Kevin Koo</h1><br><br>Majored in Biochemistry<br>From Plainview, NY<br>Loves L.A. Kalbi<br>Class of 2017<br></div>
             </div>
           </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
+          <div class = flip-container2 ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
-            </div>
-          </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
-            </div>
-          </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
-            </div>
-          </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
-            </div>
-          </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
-            </div>
-          </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
-            </div>
-          </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
-            </div>
-          </div>
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front></div>
-              <div class = back></div>
+              <div class = front><img class = EBPhoto src = "photos/14114885_10154606160394739_8790768344525941606_o.jpg"></div>
+              <div class = "back red"><h1 class = name>Lynn Cheng</h1><br><br>Majored in Economics<br>From Singapore<br>Loves Jjajangmyun<br>Class of 2017<br></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id = "page6" class = "pages">
-        <div id = AUarea>
-          <img src = "photos/18077299_1270651123053809_1517508865951383266_o.jpg" id = AUphotos>
-          <div id = AUlayer></div>
-          <p id = AUmessage>"Tufts KSA is a TCU funded, student run organization with the purpose of establishing the growth of Korean culture within the student body at Tufts University and creating an open space for cultural discussion and interaction."</p>
-        </div>
-      </div>
+
   </body>
 </html>
