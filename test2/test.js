@@ -15,14 +15,15 @@ checkPosition();
 window.addEventListener('resize', checkPosition, false);  
 
 function openNav() {
-  document.getElementById("pagepiling").style.marginLeft = margin;
+  
+  document.getElementById("navi").style.width = margin2;
   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   
-  document.getElementById("pagepiling").style.marginLeft = "0";
+  document.getElementById("navi").style.width = "0%";
   document.body.style.backgroundColor = "white";
 }
 
@@ -40,9 +41,6 @@ function myFunction(x) {
 }
 
 window.onload = (function () { 
-     document.getElementById("navi").style.width = "38%";
-  
-  
     $('#pagepiling').pagepiling({
       verticalCentered: false,
       scrollingSpeed: 500,
