@@ -282,14 +282,14 @@ h2{
 }
 
 .title{
-  font-family: Campton;
+  font-family: Campton,sans-serif;
   font-weight: 900;
   font-size: 100px;
   position: absolute;
 }
 
 .description{
-  font-family: Lato;
+  font-family: Lato,sans-serif;
   font-weight: 400;
   font-size: 20px;
   width: 200px;
@@ -381,7 +381,7 @@ h2{
   position: absolute;
   width: 100%;
   top: 28%;
-  font-family: Campton;
+  font-family: Campton,sans-serif;
   color: whitesmoke;
   z-index: 1;
   transition: .5s ease;
