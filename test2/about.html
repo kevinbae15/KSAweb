@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,400" rel="stylesheet">
     
     <!--JS and CSS-->
-    <link href = "eboard.css" type = "text/css" rel = "stylesheet">
-    <script type = text/javascript src = eboard.js></script>
+    <link href = "about.css" type = "text/css" rel = "stylesheet">
+    <script type = text/javascript src = about.js></script>
+    <script language="javascript" src="/email.js"></script>
     
     <!--Navi Icons-->
     <script src="https://use.fontawesome.com/71ec4b0f1f.js"></script>
@@ -41,15 +42,15 @@
         <a class = links href="index.html">Home</a><br><br><br>
         <a class = "links" href="events.html">Events</a><br><br><br>
         <a class = "links active">About</a><br><br><br>
-        <a class = links href="#">Media</a>
+        <a class = links href="media.html">Media</a>
       </div>
       <!--Facebook, Youtube, and Email-->
       <div id = contactInfo>
         <div id = contact-head>
           <h2>Connect:</h2>
-          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-envelope-open fa-2x" aria-hidden="true"></i>
+          <a href = "https://www.facebook.com/TuftsKSA/" class="fa fa-facebook fa-2x" aria-hidden="true"></a>
+<!--          <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>-->
+          <a  href="javascript:MailToLinkClick('ksatufts','gmail.com')" onmousemove = "MailToLinkOver('mojo','tufts.edu')" onmouseout="MailToLinkOut()" class="fa fa-envelope-open fa-2x" aria-hidden="true"></a>
         </div>
       </div>
     </div>
@@ -62,6 +63,8 @@
         <div class="bar bar3" id = bar3></div>
       </div>
     </div>
+    
+    <div id = phone-menu></div>
     
     
     <div id = "page6" class = "pages">
@@ -144,12 +147,6 @@
             </div>
           </div>
           
-          <div class = flip-container ontouchstart="this.classList.toggle('hover');">
-            <div class = indiphotos>
-              <div class = front><img class = EBPhoto src = "photos/15259453_1220026014758292_1832609191360741187_o.jpg"></div>
-              <div class = "back red"><h1 class = name>Nayoung Kim</h1><br>Majoring in Biochemistry and Psychology<br>From Winchester, MA<br>Loves 국수<br>Class of 2017<br><br><hi class = position>Alumni Representative</hi></div>
-            </div>
-          </div>
           <div class = flip-container ontouchstart="this.classList.toggle('hover');">
             <div class = indiphotos>
               <div class = front><img class = EBPhoto src = "photos/IMG_1202.jpg"></div>

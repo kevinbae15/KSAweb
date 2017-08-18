@@ -174,7 +174,7 @@ p{
 
 .name{
   color:black;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 100;
 }
 
@@ -316,10 +316,6 @@ p{
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 
 /*Menu Button Styling*/
 /*********************************************************/
@@ -364,12 +360,24 @@ p{
   
 }
 
+#phone-menu{
+  position: fixed;
+  z-index: 19;
+  top: 13px;
+  right: 15px;
+  background-color: deepskyblue;
+  height: 40px;
+  width: 40px;
+  visibility: hidden;
+  transition: .5s;
+}
+
 /*Navigation Content*/
 /*********************************************************/
 #logodiv{
   text-align: center;
   margin: 0 auto;
-  width: 50%;
+  width: 100%;
 }
 
 #naviheading{
@@ -452,7 +460,7 @@ h2{
 }
 
 .fa-facebook{
-  margin-left: 130%;
+  margin-left: 140%;
 }
 
 .fa-youtube-play{
@@ -460,7 +468,7 @@ h2{
 }
 
 .fa-envelope-open{
-  margin-left: 240%;
+  margin-left: 210%;
 }
 
 .fa-facebook:hover{
@@ -619,7 +627,7 @@ h2{
   }
   
   .back{
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   
   .flip-container{
@@ -642,7 +650,7 @@ h2{
   }
   
   #navilinks{
-    left: 50%;
+    left: 43%;
     margin: 0 5%;
   }
   
@@ -674,6 +682,12 @@ h2{
 ## Phones, Extra Small Devices
 ------------------------------------*/
 @media only screen and (max-width: 480px) {
+  
+  #AUmessage{
+    margin-top: 15px;
+    width: 65%;
+    margin-right: 65px;
+  }
   
   #page6{
     display: block;
@@ -710,7 +724,7 @@ h2{
   }
   
   #navilinks{
-    left: 45%;
+    left: 47.5%;
     margin: -7% -2%;
     font-size: 2.5vw;
   }
@@ -734,12 +748,42 @@ h2{
   }
   
   .back{
-    font-size: 1.75vw;
+    font-size: 2.7vw;
+  }
+  
+  .bar{
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    margin: 5px 0;
+    
+  }
+  
+  #phone-menu{
+    visibility: visible;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2.5px, 2px) ;
+    transform: rotate(-45deg) translate(-2.5px,2px) ;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6.5px) ;
+    transform: rotate(45deg) translate(-7.2px, -7.5px) ;
+  }
+  
+  #ABtitle{
+    margin-top: -200px;
   }
 }
 
-@media only screen and (max-height: 720px){
-  #navilinks{
-    margin: 0% -2%;
+@media screen and (max-height: 450px) {
+    #logodiv {position: absolute; top: 10px;}
+  #contact-head{
+    position:absolute;
+   bottom: 15px;
   }
-} 
+}

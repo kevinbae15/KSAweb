@@ -1,16 +1,29 @@
 var first = true;
 var open = false;
 
+function checkPosition() {
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        margin = "-100%";
+        margin2 = "100%";
+    } else {
+        margin = "-38%";
+        margin2 = "38%";
+    }
+}
+
+checkPosition();
+window.addEventListener('resize', checkPosition, false);  
+
 function openNav() {
-  document.getElementById("pagepiling").style.marginLeft = "-38%";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  
+  document.getElementById("mySidenav").style.width = margin2;
+ 
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
   
-  document.getElementById("pagepiling").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
+  document.getElementById("mySidenav").style.width = "0%";
 }
 
 function myFunction(x) {
@@ -27,9 +40,6 @@ function myFunction(x) {
 }
 
 window.onload = (function () { 
-     document.getElementById("navi").style.width = "38%";
-  
-  
     $('#pagepiling').pagepiling({
       verticalCentered: false,
       scrollingSpeed: 500,

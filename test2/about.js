@@ -24,6 +24,9 @@ function openNav() {
   document.getElementById("bar1").style.background = "white";
   document.getElementById("bar2").style.background = "white";
   document.getElementById("bar3").style.background = "white";
+  if (window.matchMedia('(max-width: 480px)').matches){
+   console.log("HELLO"); document.getElementById("phone-menu").style.background = "#111";
+  }
 }
 
 
@@ -32,9 +35,14 @@ function closeNav() {
   document.getElementById("container").style.marginLeft = "9%";
   document.getElementById("mySidenav").style.width = "6%";
   document.getElementById("naviBar").style.background = "white";
-  document.getElementById("bar1").style.background = "black";
+  if (window.matchMedia('(max-width: 480px)').matches){
+    document.getElementById("phone-menu").style.background = "deepskyblue";
+  }
+  else{
+    document.getElementById("bar1").style.background = "black";
   document.getElementById("bar2").style.background = "black";
   document.getElementById("bar3").style.background = "black";
+  }
 }
 
 
