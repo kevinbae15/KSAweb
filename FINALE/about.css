@@ -1,0 +1,807 @@
+* { 
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+  font-family: 'Yantramanav',sans-serif;
+  font-weight: 100;
+  margin:0;
+  padding:0;
+  letter-spacing: 2.5px;
+}
+
+*{
+  -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/*This still works!!!*/
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+body{
+  margin:0;
+}
+
+p{
+  line-height: 20px;
+}
+
+/********************************************************/
+
+* {box-sizing:border-box}
+
+#page5{
+  position: relative;
+  height: 1200px;
+  /* Create the parallax scrolling effect */
+  width: 100%;
+  z-index: 100;
+}
+
+#page6{
+  position: relative;
+  height: 750px;
+  /* Create the parallax scrolling effect */
+  width: 100%;
+  overflow: hidden;
+  z-index: 12;
+  margin-left: 0;
+  transition: margin-left .5s;
+}
+
+#page7{
+  width: 100%;
+  margin: 75px auto;
+  box-sizing: border-box;
+  transition: margin-left .5s;
+  z-index: 2;
+  position: relative;
+}
+
+#page7-container{
+  height: 600px;
+  margin: 75px auto;
+  margin: 75px auto;
+  box-sizing: border-box;
+  transition: margin-left .5s;
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+/********************************************************/
+
+#EMphotos{
+  display: block;
+  left: 0%;
+  top: 0%;
+  z-index: 0;
+  margin: auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.flip-container{
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  position: relative;
+  height: 300px;
+  width: 25%;
+  float: left;
+  overflow: hidden;
+}
+
+.flip-container2{
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+  margin: 0;
+  padding: 0;
+  display: inline-grid;
+  position: relative;
+  height: 50%;
+  width: 25%;
+  float: left;
+  overflow: hidden;
+}
+
+.flip-container2:hover .indiphotos, .flip-container2.hover .indiphotos {
+		transform: rotateY(180deg);
+	}
+
+
+
+/* entire container, keeps perspective */
+.flip-container{
+
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .indiphotos, .flip-container.hover .indiphotos {
+		transform: rotateY(180deg);
+	}
+
+.front, .back {
+	width: 100%;
+  height: 100%;
+}
+
+/* flip speed goes here */
+.indiphotos {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+  
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  background-color: white;
+  color: black;
+  padding: 3%;
+  font-weight: 400;
+  font-size: .8vw;
+}
+
+.red{
+  border: 7px solid rgb(239, 83, 80);
+}
+
+.blue{
+  border: 7px solid rgb(66, 165, 245);
+}
+
+.name{
+  color:black;
+  font-size: 1.5vw;
+  font-weight: 100;
+}
+
+.position{
+  color: black;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 90%;
+  font-weight: 100;
+}
+
+.EBPhoto{
+  min-width: 100%;
+  height:100%;
+  position: absolute;
+  display: block;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+#leo{
+  display: block;
+  max-height: 500px;
+  max-width: 1500px;
+  height: auto;
+  width:auto;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+#vivian{
+  display: block;
+  max-height: 400px;
+  max-width: 1200px;
+  height: auto;
+  width:auto;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
+
+
+/********************************************************/
+
+#AUarea{
+  position:absolute;
+  top:0;
+  height 0%;
+  overflow: hidden;
+  width: 100%;
+}
+
+#AUphotos{
+  width: 100vw;
+  filter: grayscale(70%);
+}
+
+#AUlayer{
+  position: absolute;
+  background-color: rgba(255,255,255,.90);
+  top:0;
+  left:0;
+  width:100%;
+  height: 750px;
+}
+
+#message_head{
+  position: absolute;
+  top: 5%;
+}
+
+#AUmessage{
+  position: relative;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
+  margin-top: 12%;
+  z-index: 10;
+  width: 50%;
+  height: auto;
+  font-size: 2vw;
+  line-height:normal; 
+}
+
+/********************************************************/
+
+#preload{
+  height:350vh;
+  width:100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+
+/*Navigation Styling*/
+/*********************************************************/
+
+#naviBar{
+  height: 520vh;
+  width: 6%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  transition: .5s;
+  
+}
+
+/* The side navigation menu */
+.sidenav {
+  font-weight: 100;
+    height: 100%; /* 100% Full-height */
+    width: 6%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    float:right;
+    letter-spacing: 3px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+/*Menu Button Styling*/
+/*********************************************************/
+
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+  justify-content:center;
+  margin: auto;
+  vertical-align: middle;
+  align-items: center; 
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  z-index: 20;
+}
+
+.bar {
+  background-color: black;
+  margin: auto;
+    width: 30px;
+    height: 1px;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2.5px, 1px) ;
+    transform: rotate(-45deg) translate(-3.3px, 3.7px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6.5px) ;
+    transform: rotate(45deg) translate(-7px, -7.5px) ;
+  
+}
+
+#phone-menu{
+  position: fixed;
+  z-index: 19;
+  top: 13px;
+  right: 15px;
+  background-color: deepskyblue;
+  height: 40px;
+  width: 40px;
+  visibility: hidden;
+  transition: .5s;
+}
+
+/*Navigation Content*/
+/*********************************************************/
+#logodiv{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#naviheading{
+  width: 500px;
+  color:white;
+  font-family: "Yantramanav",sans-serif;
+  position:absolute;
+  top: 37%;
+  left: 36%;
+  letter-spacing: 10px;
+  font-weight: 100;
+}
+
+#navilinks{
+  font-family: "Lato",sans-serif;
+  font-weight: 100;
+  position: absolute;
+  top: 50%;
+  float: left;;
+  left: 46%;
+}
+
+
+.links{
+  overflow: hidden;
+  position:absolute;
+  padding: 0px;
+  line-height: 35px;
+}
+
+.links:after{
+  border-bottom: 1px solid white;
+  position: absolute;
+  width: 0%;
+  content: '';
+  transition: 0.5s;
+  left: 0;
+  bottom: 0;
+}
+
+.active:after{
+  width: 100%;
+}
+
+.links:hover::after{
+  width: 100%;
+}
+
+
+/*Contact Info*/
+#contactInfo{
+  width: 30%;
+  margin: 0 auto;
+  font-size: .6vw;
+  font-family: "Lato",sans-serif;
+  letter-spacing: 4px;
+  color: white;
+}
+
+#contact-head{
+  position: absolute;
+  bottom: 6%;
+}
+
+h2{
+  font-weight: 100;
+  margin-top: 40px;
+}
+
+.fa{
+  color:white;
+  font-size: 10%;
+  position: absolute;
+  bottom: 3%;
+  cursor:pointer;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-facebook{
+  margin-left: 140%;
+}
+
+.fa-youtube-play{
+  margin-left: 180%;
+}
+
+.fa-envelope-open{
+  margin-left: 210%;
+}
+
+.fa-facebook:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-youtube-play:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-envelope-open:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+/********************************************************/
+
+/*Holds all boxes*/
+#container{
+  width: 82%;
+  margin: 75px auto;
+  box-sizing: border-box;
+  margin-left: 9%;
+  transition: margin-left .5s;
+  z-index: 2;
+  position: relative;
+  
+}
+
+#EBtitle{
+  font-size: 2vw;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  color: black;
+  padding-bottom: 15%;
+  padding-top: 50px;
+}
+
+#ABtitle{
+  color: black;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 2vw;
+  
+}
+
+
+
+
+/********************************************************/
+
+
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1700px) {
+  
+  #leo{
+    max-height: 400px;
+  }
+  
+  #EBtitle{
+    margin-top: -12%;
+  }
+  
+  #naviheading{
+    font-size: 3vw;
+    left: 28%;
+    
+  }
+  
+   #navilogo{
+    width: 25vh;
+    left: 30%
+  }
+  
+  
+  .back{
+    font-size: 1.15vw;
+    padding: 5%;
+  }
+
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 1100px)  {
+  
+  #EBtitle{
+    margin-top: -45%;
+  }
+  
+  #leo, #vivian{
+    max-height: 350px;
+  }
+  
+  #naviheading{
+    font-size:3vw;
+    left: 25%; 
+  }
+  
+  #navilogo{
+    width: 25vh;
+    left: 30%
+  }
+  
+  .back{
+    font-size: 1.40vw;
+    padding: 10%;
+  }
+}
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 768px)  {
+  
+  #page6{
+    display: block;
+    height: 500px;
+  }
+  
+  #container{
+    margin-top:350px;
+  }
+  
+  #EBtitle{
+    margin-top: -90%;
+    padding-bottom: 5%;
+  }
+  
+  
+  #AUmessage{
+    margin-top: 0%;
+    font-size: 3vw;
+  }
+  
+  #AUphotos{
+    max-height: 
+  }
+  
+  .back{
+    font-size: 2vw;
+  }
+  
+  .flip-container{
+    height: 250px;
+    width: 33%;
+  }
+  
+  .flip-container2{
+    height: 250px;
+    width: 33%;
+  }
+  
+  #contactInfo{
+    font-size:.8vw;
+    margin: 0 42%;
+  }
+  
+  .links{
+    font-size: 2vw;
+  }
+  
+  #navilinks{
+    left: 43%;
+    margin: 0 5%;
+  }
+  
+  #navilogo{
+    width: 125px;
+    left: 50%;
+    margin-left: 2%;
+  }
+  
+  #naviheading{
+    font-size: 4vw;
+    left: 37%;
+  }
+  
+  #EMphotos{
+    z-index: 1000;
+    height: 1000px;
+  }
+  
+  #page7-container{
+    height: 500px;
+  }
+  #page7{
+    margin-top: 00px;
+    padding-top: 250px;
+  }
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  
+  #vivian{
+    max-height: 225px;
+  }
+  
+  #AUmessage{
+    margin-top: 15px;
+    width: 65%;
+    margin-right: 65px;
+  }
+  
+  #page6{
+    display: block;
+    height: 250px;
+  }
+  
+  #container{
+    margin-top:400px;
+  }
+  #page7{
+    margin-top: 400px;
+  }
+  
+  #EBtitle{
+    height: 150px;
+    margin-top: -500px;
+  }
+
+  
+  #naviheading{
+    margin: -3% -7%;
+    font-size: 5vw;
+  }
+  
+  #contactInfo{
+    font-size:2vw;
+    margin: 0 30%;
+  }
+  #navilogo{
+    width: 100px;
+    left: 33%;
+    top: 5%;
+    margin: 0 20%;
+  }
+  
+  #navilinks{
+    left: 47.5%;
+    margin: -7% -2%;
+    font-size: 2.5vw;
+  }
+  
+  .flip-container{
+    height: 200px;
+    width: 50%;
+  }
+  
+  .flip-container2{
+    height: 200px;
+    width: 50%;
+  }
+  
+  .name{
+    font-size:3vw;
+  }
+  
+  .position{
+    font-size:3vw;
+  }
+  
+  .back{
+    font-size: 2.7vw;
+  }
+  
+  .bar{
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    margin: 5px 0;
+    
+  }
+  
+  #phone-menu{
+    visibility: visible;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2.5px, 2px) ;
+    transform: rotate(-45deg) translate(-2.5px,2px) ;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6.5px) ;
+    transform: rotate(45deg) translate(-7.2px, -7.5px) ;
+  }
+  
+  #ABtitle{
+    margin-top: -200px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+    #logodiv {position: absolute; top: 10px;}
+  #contact-head{
+    position:absolute;
+   bottom: 15px;
+  }
+}

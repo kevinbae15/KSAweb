@@ -1,0 +1,922 @@
+* { 
+  /*border: 1px solid rgba(0, 0, 0, 0.3);*/
+  margin:0;
+  padding:0;
+}
+
+* {
+  -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  z-index: -1;
+}
+
+@font-face {
+    font-family: Campton;
+    src: url(Campton-BoldDEMO.otf);
+}
+
+/**********************************************************/
+
+
+/*Navigation Styling*/
+/*********************************************************/
+
+#naviBar{
+  height: 520vh;
+  width: 6%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  transition: .5s;
+  
+}
+
+/* The side navigation menu */
+.sidenav {
+  font-weight: 100;
+    height: 100%; /* 100% Full-height */
+    width: 0%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 17; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    float:right;
+    letter-spacing: 3px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+/*Menu Button Styling*/
+/*********************************************************/
+
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+  justify-content:center;
+  margin: auto;
+  vertical-align: middle;
+  align-items: center; 
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  z-index: 20;
+}
+
+.bar {
+  background-color: black;
+  margin: auto;
+    width: 30px;
+    height: 1px;
+    margin: 7px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2.5px, 1px) ;
+    transform: rotate(-45deg) translate(-3.3px, 3.7px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6.5px) ;
+    transform: rotate(45deg) translate(-7px, -7.5px) ;
+  
+}
+
+#phone-menu{
+  position: fixed;
+  z-index: 19;
+  top: 13px;
+  right: 15px;
+  background-color: deepskyblue;
+  height: 40px;
+  width: 40px;
+  visibility: hidden;
+  transition: .5s;
+}
+
+/*Navigation Content*/
+/*********************************************************/
+#logodiv{
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#naviheading{
+  width: 500px;
+  color:white;
+  font-family: "Yantramanav",sans-serif;
+  position:absolute;
+  top: 37%;
+  left: 36%;
+  letter-spacing: 10px;
+  font-weight: 100;
+}
+
+#navilinks{
+  font-family: "Lato",sans-serif;
+  font-weight: 100;
+  position: absolute;
+  top: 50%;
+  float: left;;
+  left: 46%;
+}
+
+
+.links{
+  overflow: hidden;
+  position:absolute;
+  padding: 0px;
+  line-height: 35px;
+}
+
+.links:after{
+  border-bottom: 1px solid white;
+  position: absolute;
+  width: 0%;
+  content: '';
+  transition: 0.5s;
+  left: 0;
+  bottom: 0;
+}
+
+.active-link:after{
+  width: 100%;
+}
+
+.links:hover::after{
+  width: 100%;
+}
+
+
+/*Contact Info*/
+#contactInfo{
+  width: 30%;
+  margin: 0% auto;
+  font-size: .6vw;
+  font-family: "Lato",sans-serif;
+  letter-spacing: 4px;
+  color: white;
+}
+
+#contact-head{
+  position: absolute;
+  bottom: 125px;
+}
+
+h2{
+  font-weight: 100;
+  margin-top: 40px;
+}
+
+.fa{
+  border: 0px solid transparent;
+  color:white;
+  font-size: 10%;
+  position: absolute;
+  bottom: 2%;
+  cursor:pointer;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-facebook{
+  margin-left: 140%;
+}
+
+.fa-youtube-play{
+  margin-left: 180%;
+}
+
+.fa-envelope-open{
+  margin-left: 210%;
+}
+
+.fa-facebook:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-youtube-play:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+.fa-envelope-open:hover{
+  color: lightgrey;;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+/*********************************************************/
+
+
+#container{
+  position: relative;
+  height: 3300px;
+  width: 1000px;
+  margin: 7% auto;
+  transition: margin-left .5s;
+}
+
+.section-divide{
+  
+}
+
+.pic{
+  width: 750px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.right{
+  margin-left: 250px;
+}
+
+.title{
+  font-family: Campton,sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  position: absolute;
+}
+
+.description{
+  font-family: Lato,sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  width: 200px;
+  color: dimgray;
+  position: absolute;
+}
+
+#events-title{
+  color: rgb(66, 165, 245);
+  top: 2%;
+  left: 675px;
+}
+
+#events-description{
+  top: 5.5%;
+  left: 770px;
+}
+
+#culture-title{
+  color: rgb(239, 83, 80);
+  top: 33%;
+  left: 0px;
+}
+
+#culture-description{
+  top: 36.5%;
+  left: 30px;
+}
+
+#bbbs-title{
+  color: rgba(27,27,27,1);
+  top: 70%;
+  left: 500px;
+}
+
+#bbbs-description{
+  top: 73.5%;
+  left: 770px;
+}
+
+#bbbs-extra{
+  text-align: center;
+  width: 100%;
+}
+
+#bbbs-logo{
+  position: relative;
+  height: 500px;
+}
+
+/********************************************************/
+
+#eventBoxes{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+}
+
+#food, #social, #meeting{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+  color: black;
+  text-align: center;
+  width: 250px;
+  height: 45%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/********************************************************/
+
+#foodphoto, #socialphoto, #meetingphoto{
+  position: absolute;
+  display: block;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  max-width = 100%;
+  height: auto;
+
+  filter: brightness(80%);
+}
+
+#foodTitle, #socialTitle, #meetingTitle{
+  position: absolute;
+  width: 100%;
+  top: 28%;
+  font-family: Campton,sans-serif;
+  color: whitesmoke;
+  z-index: 1;
+  transition: .5s ease;
+  font-weight: 400;
+}
+
+#foodP, #socialP, #meetingP{
+  width: 75%;
+  font-family: Lato,sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  -ms-transform: translate(-50%, -35%);
+}
+
+/********************************************************/
+
+.overlayf {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(198,12,48,.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+#food:hover .overlayf {
+  height: 100%;
+}
+
+#food:hover #foodTitle{
+  transform: translate(0%, -250%);
+  -ms-transform: translate(0%, -250%);
+}
+
+/********************************************************/
+
+.overlaym{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+#meeting:hover .overlaym {
+  height: 100%;
+}
+
+#meeting:hover #meetingTitle{
+  transform: translate(0%, -250%);
+  -ms-transform: translate(0%, -250%);
+}
+
+/********************************************************/
+
+.overlays{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,52,120,.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+#social:hover .overlays {
+  height: 100%;
+}
+
+#social:hover #socialTitle{
+  transform: translate(0%, -250%);
+  -ms-transform: translate(0%, -250%);
+}
+
+
+/********************************************************/
+
+
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: 150px auto;
+  background-color: white;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  font-family: sans-serif;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+/*-----------------------------------
+# Media Queries
+------------------------------------*/
+/*-----------------------------------
+## Wide Screens, Large Devices
+------------------------------------*/
+@media only screen and (max-width : 1700px) {
+  
+  .title{
+    font-size: 7vw;
+  }
+  
+  .description{
+    font-size: 1.3vw;
+  }
+  
+  #contact-head{
+  position: absolute;
+  bottom: 75px;
+}
+  
+  
+  #naviheading{
+    font-size: 3vw;
+    left: 28%;
+    
+  }
+  
+   #navilogo{
+    width: 25vh;
+    left: 30%
+  }
+
+}
+/*-----------------------------------
+## Desktops, Medium Devices
+------------------------------------*/
+@media only screen and (max-width : 1100px)  {
+  
+  .slideshow-container {
+    margin: 100px auto;
+  }
+  
+  #container{
+    width: 90vw;
+    height: 2800px;
+  }
+  
+  .description{
+    width: calc(50% - 270px);
+    font-size: 1.55vw;
+  }
+  
+  #events-title{
+    left: 500px;
+  }
+  
+  #culture-title{
+    top: 35%;
+  }
+  
+  #bbbs-title{
+    top: 72%;
+    left: 400px;
+  }
+  
+  #events-description{
+    left: 625px;
+    top: 5%;
+  }
+  
+  #culture-description{
+    top: 38%;
+    left: 5%;
+  }
+  
+  #bbbs-description{
+    left: 625px;
+    top: 75%;
+    
+  }
+  
+  .pic{
+    width: 600px;
+  }
+  
+  #naviheading{
+    font-size:3vw;
+    left: 25%; 
+  }
+  
+  #navilogo{
+    width: 25vh;
+    left: 30%
+  }
+  
+  .right{
+    margin-left: auto;
+    margin-right: 0;
+  }
+  #food, #social, #meeting{
+    width:225px;
+  }
+
+}
+/*-----------------------------------
+## Customized Media Query
+------------------------------------*/
+@media only screen and (max-width : 860px)  {
+  
+  
+  
+  .section-divide{
+    
+  }
+  
+  #container{
+    width: 80vw;
+  }
+  
+  .pic{
+    width: 80vw;
+  }
+  
+  .title{
+    margin-top: 10px;
+    position: relative;
+    left: 0px;
+  }
+  
+  .description{
+    position: relative;
+    width: 55%;
+    font-size: 2vw;
+  }
+  
+  #events-title{
+    position: relative;
+    left: 0px;
+  }
+  
+  #culture-title{
+  }
+  
+  #bbbs-title{
+    left: 0px;
+  }
+  
+  #events-description{
+    left: 5%;
+    
+  }
+  
+  #culture-description{
+    left: 5%;
+  }
+  
+  #bbbs-description{
+    left: 5%;
+  }
+  
+   #food, #social, #meeting{
+    width:175px;
+     height: 55%;
+  }
+  
+  #foodphoto, #socialphoto, #meetingphoto{
+    width: 300px;
+  }
+  
+  #eventBoxes{
+    height: 350px;
+    margin-bottom: 40px;
+  }
+  
+ 
+  
+}
+
+/*-----------------------------------
+## Tablets, Small Devices
+------------------------------------*/
+@media only screen and (max-width : 750px) {
+  #contactInfo{
+    font-size:.8vw;
+    margin: 0 40%;
+  }
+  
+  .links{
+    font-size: 2vw;
+  }
+  
+  #navilinks{
+    left: 40%;
+    margin: 0 7%;
+  }
+  
+  #navilogo{
+    width: 125px;
+    left: 55%;
+    margin-left: 4%;
+  }
+  
+  #naviheading{
+    font-size: 4vw;
+    left: 37%;
+  }
+  
+  #contact-head{
+  position: absolute;
+  bottom: 20px;
+    margin-bottom: 50px;
+  }
+  
+  #eventBoxes{
+    padding: 5px 0;
+    display: block;
+    height: 800px; 
+  }
+  
+  #food, #meeting, #social{
+    margin: 40px auto;
+    width:250px;
+    height: 200px;
+    
+  }
+  
+  #container{
+    height: 0px;
+  }
+  
+  #bbbs-logo{
+    height: auto;
+    width: 100%;
+  }
+  
+    
+  .bar{
+    background-color: white;
+    height: 2px;
+    width: 20px;
+    margin: 5px 0;
+    
+  }
+  
+  #phone-menu{
+    visibility: visible;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2.5px, 2px) ;
+    transform: rotate(-45deg) translate(-2.5px,2px) ;
+  }
+
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -6.5px) ;
+    transform: rotate(45deg) translate(-7.2px, -7.5px) ;
+  }
+  
+  
+}
+/*-----------------------------------
+## Phones, Extra Small Devices
+------------------------------------*/
+@media only screen and (max-width: 480px) {
+  
+  .slideshow-container {
+    width: 85%;
+  }
+  
+  .sidenav{
+    height: 100vh;
+  }
+  
+  .pic{
+    width: 100vw;
+    border-radius: 0px;
+  }
+  
+  .title{
+    font-size: 10vw;
+    padding-left: 20px;
+  }
+  
+  .description{
+    font-size: 3.0vw;
+    width: 80%;
+    padding-left: 20px;
+  }
+  
+  #container{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0px;
+      z-index: 15;
+  }
+  
+  #naviheading{
+    margin: -3% -7%;
+    font-size: 5vw;
+  }
+  
+  #contactInfo{
+    font-size:2vw;
+    margin: 0 25%;
+  }
+  
+  #contact-head{
+    bottom: calc(25px);
+  }
+  
+  #navilogo{
+    width: 100px;
+    left: 33%;
+    top: 5%;
+    margin: 0 20%;
+  }
+  
+  #navilinks{
+    left: 47.5%;
+    margin: -7% -2%;
+    font-size: 2.5vw;
+  }
+  
+  .bar{
+    z-index: 200;
+  }
+  
+  #naviBar{
+    width: 0;
+  }
+  
+  #eventBoxes{
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+    #logodiv {position: absolute; top: 10px;}
+  #contact-head{
+    position:absolute;
+   bottom: 15px;
+  }
+}

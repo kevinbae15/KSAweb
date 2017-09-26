@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    
+    <!--Setting the Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!--Tab Icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="photos/back_Black.png">
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,400,900" rel="stylesheet">
+    
+    <!--FadeThis Plugin-->
+    <script src="jquery.fadethis.js"></script>
+    <script
+     src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(window).fadeThis();
+      });
+    </script>
+    
+    <!--JS and CSS-->
+    <link href = events.css type = text/css rel = stylesheet>
+    <script type = text/javascript src = events.js></script>
+    <script language="javascript" src="/email.js"></script>
+    
+    <!--Navi Icons-->
+    <script src="https://use.fontawesome.com/71ec4b0f1f.js"></script>
+  
+    <!--Tab Header-->
+    <title>Tufts KSA</title>
+      
+  </head>
+  
+  <body>
+    <div id = naviBar></div>
+
+    <!--Pop Up Navigation Div-->
+    <div id="mySidenav" class="sidenav">
+      <!--Logo-->
+      <div id = logodiv>
+      <img id = navilogo src = "photos/back_White.png" width = 200>
+      </div>
+      <h1 id = naviheading>Tufts KSA</h1>
+      <!--Links to different webpages-->
+      <div id = navilinks>
+        <a class = links href="index.html">Home</a><br><br><br>
+        <a class = "links active-link">Events</a><br><br><br>
+        <a class = "links" href = "about.html">About</a><br><br><br>
+        <a class = links href="media.html">Media</a>
+      </div>
+      <!--Facebook, Youtube, and Email-->
+      <div id = contactInfo>
+        <div id = contact-head>
+          <h2>Connect:</h2>
+          <a href = "https://www.facebook.com/TuftsKSA/" class="fa fa-facebook fa-2x" aria-hidden="true"></a>
+<!--          <a class="fa fa-youtube-play fa-2x" aria-hidden="true"></a>-->
+          <a href="javascript:MailToLinkClick('ksatufts','gmail.com')" onmousemove="MailToLinkOver('mojo','tufts.edu')" onmouseout="MailToLinkOut()" class="fa fa-envelope-open fa-2x" aria-hidden="true"></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Menu Button-->
+    <div class="menu-container material-icons" id = menu onclick="myFunction(this);">
+      <div id = barCont>
+        <div class="bar bar1" id = bar1></div>
+        <div class="bar bar2" id = bar2></div>
+        <div class="bar bar3" id = bar3></div>
+      </div>
+    </div>
+    
+    <div id = phone-menu></div>
+    
+    <div id = container>
+      
+      <div class = section-divide id = events>
+        <div class = pic><img class = pic src = "photos/15325263_1127581924027397_4168314277036798687_o.jpg"></div>
+        <h1 class = title id = events-title>Events</h1>
+        <p class = description id = events-description>One of our methods of spreading Korean culture is through our events. We have done various types of events from Korean BBQ to Running Man to even Pepero Day.</p>
+      </div>
+      
+      <div id = "eventBoxes">
+        <div id = "food">
+          <img src = "photos/338993_274652942653637_2007165754_o.jpg" id = foodphoto width = 700 height = 700>
+          <h2 id = foodTitle>Indulge</h2>
+          <div class = "container overlayf"><p id = 'foodP'>There is no better way to spread Korean culture than over a hot dish of popular Korean cuisines. Best thing is, they are free!</p></div>
+        </div>
+        <div id = meeting>
+          <img src = "photos/14380153_1046926042092986_6683837706259614007_o.jpg" width = 700 height = 700 id = meetingphoto>
+          <h2 id = meetingTitle>Connect</h2>
+          <div class = "container overlaym"><p id = 'meetingP'>Come over to our open meetings where you can get involved by helping plan our next event or you even just hang out with us!</p></div>
+        </div>
+        <div id = social>
+          <img src = "photos/11223331_851168628335396_6503384544113623438_o.jpg" id = socialphoto height = 350 width =350>
+          <h2 id = socialTitle>Experience</h2>
+          <div class = "container overlays"><p id = 'socialP'>Come to social events where we just aim to have fun while demonstrating Korean culture!</p></div>
+        </div>
+      </div>
+      
+      <div class = section-divide id = culture-show>
+        <div class = "pic right"><img class = pic src = "photos/17966215_1270647966387458_8435115631044933184_o.jpg"></div>
+        <h1 class = title id = culture-title>Culture Show</h1>
+        <p class = description id = culture-description>The main event that KSA holds every year is the culture show. Come watch us dance to popular K-Pop music, act out Korean paradies, and much more! </p>
+      </div>
+      
+       <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="photos/18077246_1270638873055034_6379647260826066397_o.jpg" style="width:100%">
+          
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="photos/18076986_1270660899719498_5235971240814033714_o.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="photos/18077123_1270643013054620_4136229928621326234_o.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="photos/18077286_1270648216387433_9064224945542994681_o.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="photos/18056585_1270659489719639_89594649571505729_o.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>  
+  
+      
+      
+      <div class = section-divide id = bbbs>
+        <div class = "pic"><img class = pic src = "photos/IMG_3582.JPG"></div>
+        <h1 class = title id = bbbs-title>BiBimBapS</h1>
+        <p class = description id = bbbs-description>Our sponsorship with KSA BiBimBapS or KSA BBBS helps to fulfill our goal  by cultivating the exposure of Korean culture to young children.</p>
+      </div>
+      
+      <div id = bbbs-extra><img id = bbbs-logo src = "photos/KakaoTalk_Photo_2017-08-18-01-47-51.jpeg"><p bbbs-extra-description></p></div>
+      
+    
+    </div>
+
+    
+  </body>
+  
+</html>
