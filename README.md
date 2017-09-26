@@ -1,5 +1,5 @@
 # UPDATE #
-Please look at folder "test2" to see final format
+Please look at folder "FINALE" to see final format
 
 
 # KSA WEB DEVELOPMENT
